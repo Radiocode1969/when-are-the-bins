@@ -1,0 +1,16 @@
+# when-are-the-bins
+
+''' Something simple in Python 3 to display when Wiltshire Council intends to collect refuse bins,
+    using a Pimoroni Blinkt! RGB LED hat.
+    Very hacky with no warranty given. It interrogates the Wiltshire Council website with a pre-formed
+    query then processes the output to illuminate LEDs on the Blinkt!, giving a week+ of notice for
+    each bin type:
+    Green - Garden Recycling
+    Blue - Blue cardboard and metal
+    Orange - Household waste
+    The flashing LED is today, with the relevant colour, or White if today is bin-free.
+    .
+    LEDs are off between 23:00 and 06:00 every day, and the infornation is updated at midnight.
+    (Yes, I know I could cache the query results but it isn't unknown for Wiltshire Council to change
+    bin dates at short notice due to crew availability or poor weather.)
+'''
